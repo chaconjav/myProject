@@ -2,7 +2,7 @@ pipeline {
   agent { label 'linux' }
   tools {
     maven 'Maven 3.54'
-    jdk 'java 8'
+    jdk 'java8-2'
   }
   stages {
     stage('checkout') {
