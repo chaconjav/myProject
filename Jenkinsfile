@@ -1,7 +1,7 @@
 pipeline {
   agent { label 'linux' }
   tools {
-    maven 'Maven3.54'
+    maven 'Maven 3.54'
   }
   stages {
     stage('checkout') {
