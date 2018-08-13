@@ -2,6 +2,7 @@ pipeline {
   agent { label 'linux' }
   tools {
     maven 'Maven 3.54'
+    jdk 'java 8'
   }
   stages {
     stage('checkout') {
@@ -11,6 +12,7 @@ pipeline {
     }
     stage('Build') {
       steps {
+        sh 'echo "JAVA_HOME..."'
         sh 'echo $JAVA_HOME'
         sh 'mvn clean compile'
       }
